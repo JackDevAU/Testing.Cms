@@ -7,7 +7,7 @@
     "lint": "turbo lint",
     "new": "turbo gen workspace",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "docs": "turbo dev --filter docs"
+    "tina": "turbo dev --filter tina.cms"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
