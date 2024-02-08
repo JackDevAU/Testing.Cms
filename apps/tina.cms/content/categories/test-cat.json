@@ -1,0 +1,13 @@
+{
+  "rule": "content/rules/test-rule.mdx",
+  "slug": "test-cat",
+  "title": "Test Category",
+  "rules": [
+    {
+      "rule": "content/rules/test-rule.mdx"
+    },
+    {
+      "rule": "content/rules/test-rule-5.mdx"
+    }
+  ]
+}
