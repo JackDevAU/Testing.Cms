@@ -5,16 +5,16 @@ import { RuleQuery, RuleQueryVariables } from "../../tina/__generated__/types";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { customMarkdownComponents } from "../tina-markdown-components";
 
-type HomePageProps = {
+type TinaQuery = {
+    query: string;
     data: RuleQuery;
     variables: RuleQueryVariables;
-    query: string;
 }
-function HomePageTina(props:HomePageProps) {
+
+function HomePageTina(props: TinaQuery) {
     const {data} = useTina(props);
     return (
         <div>
-            This is the Home Page!
             <TinaMarkdown content={data.rule.body} components={customMarkdownComponents} />
         </div>
     );

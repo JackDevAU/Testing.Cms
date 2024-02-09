@@ -116,6 +116,11 @@ export default defineConfig({
                 format: 'mdx',
                 fields: [
                     {
+                        type: 'boolean',
+                        name: 'archived',
+                        label: 'Archived',
+                    },
+                    {
                         type: 'string',
                         name: 'title',
                         label: 'Title',
